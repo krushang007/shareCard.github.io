@@ -1,2 +1,2 @@
 # shareCard.github.io
-Access Link :- https://shareprofile007.netlify.app/
+Access Link :- https://krushang007.github.io/shareCard.github.io/
