@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box1
+{
+    box-shadow: 0 0 10px 5px #FF6347;
+    animation:box1 5s infinite ease-in-out alternate;
+}
+.box2
+{
+    box-shadow: 0 0 10px 5px #BC13FE;
+    animation:box2 5s infinite ease-in-out alternate;
+}
+.img{
+    box-shadow: 0 0 10px 5px #5b505e;
+}
+
+@keyframes box1 {
+    to{
+        top: 10%;
+        left:40%;
+        scale: 1.1;
+    }
+}
+@keyframes box2 {
+    to{
+        /* bottom-[50px] right-[480px] */
+        bottom: 10%;
+        right:35%;
+        scale: 1.1;
+    }
+}

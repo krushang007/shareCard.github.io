@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Blur filter -->
+    <div class="absolute  filter top-0 right-0 left-0 bottom-0 bg-[#302d2d9c]  opacity-100 transition-all duration-300 "></div>
+    <!-- Card content -->
+    <div class="w-full relative h-[100vh] bg-black flex items-center justify-center">
+        <div class="sm:w-[80px] w-[60px] h-[60px] sm:h-[80px] md:w-[120px]  md:h-[120px] box1 absolute  rounded-full bg-[#FF6347] top-[8%] left-[35%]"></div>
+        <div class="sm:w-[100px] w-[80px] h-[80px] sm-h-[100px] md:w-[180px] md:h-[180px] bottom-[8%] right-[30%]  box2 absolute bg-[#BC13FE]  rounded-full"></div>
+        <div class="flex gap-8 text-white flex-col relative rounded-xl border border-[#aaaaaa7b] bg-[#302d2d9c] w-[350px]  min-h-[450px]  items-center">
+            <img src="profile.png" class="w-[150px] img mt-12 rounded-full" alt="">
+            <h2 class="text-[25px] font-bold">Krushang Vachhiyat</h2>
+            <h3 class="text-[18px]">Web developer , KrvTech</h3>
+            <div class="gap-5 flex">
+                <button onclick="showShare()" class="border-[3px] hover:text-black transition-all duration-200 hover:bg-white  flex gap-2 items-center border-[#aaaaaa7b] py-2 px-4 rounded-xl "><i class="fas fa-share"></i>Share my profile</button>
+                <button  class="hover:text-black transition-all duration-200 hover:bg-white border-[3px] border-[#aaaaaa7b] py-2 px-4 rounded-xl "><a href="https://www.instagram.com/_krushang.vachhiyat_/">Follow me</a></button>
+            </div>
+        </div>
+        <!-- main share box -->
+        <div class="md:p-5 p-2 absolute flex gap-3  transition-all duration-300 scale-0 share flex-col md:w-[50%] xl:w-[30%] w-[60%] z-20 rounded-xl border-[2px] text-white    bg-[#090808f0] border-[#aaaaaa7b]">
+            <div class="header flex justify-between items-center">
+                <h1 class="sm:text-[25px] text-[22px] md:text-[30px]">Share my profile</h1>
+                <button onclick="hideShare()">
+                    <i class="fa fa-close sm:text-[25px] text-[22px] md:text-[30px]"></i>
+                </button>
+            </div>
+            <hr class="bg-white text-white">
+            <h3>Share this via</h3>
+            <div class="flex gap-4 sm:gap-8 mx-auto items-center">
+                <i class="fa-brands text-[#d62976] hover:bg-[#d62976] hover:text-white cursor-pointer border-[#d62976] border-[2px] rounded-full sm:p-3 p-1   fa-instagram"></i>
+                <i class="fa-brands text-[#1877F2] hover:bg-[#1877F2] hover:text-white cursor-pointer border-[#1877F2] border-[2px] rounded-full sm:p-3 p-1  fa-facebook"></i>
+                <i class="fa-brands text-[#00acee] hover:bg-[#00acee] hover:text-white cursor-pointer border-[#00acee] border-[2px] rounded-full sm:p-3 p-1  fa-twitter"></i>
+                <i class="fa-brands text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer border-[#0072b1] border-[2px] rounded-full sm:p-3 p-1  fa-linkedin"></i>
+                <i class="fa-brands text-[#4078c0] hover:bg-[#4078c0] hover:text-white cursor-pointer border-[#4078c0] border-[2px] rounded-full sm:p-3 p-1  fa-github"></i>
+            </div>
+        </div>
+    </div>
+        
+    <script src="index.js"></script>
+</body>
+</html>
